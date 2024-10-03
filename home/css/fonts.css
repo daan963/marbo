@@ -1,0 +1,46 @@
+@import url('https://cdn.fonts.net/t/1.css?apiType=css&projectid=b6ad2f95-8b9c-41ce-8e24-66c08ae7befb');
+
+/* Whitney SSm Advanced Book */
+@font-face {
+  font-family: "Whitney SSm A";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url('../font/WhitneySSmAdvancedBook_normal_normal.woff2') format('woff2'),
+       url('../font/WhitneySSmAdvancedBook_normal_normal.woff') format('woff');
+}
+
+/* Whitney SSm Advanced Book Italic */
+@font-face {
+  font-family: "Whitney SSm A";
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url('../font/WhitneySSmAdvancedBookItalic_italic_normal.woff2') format('woff2'),
+       url('../font/WhitneySSmAdvancedBookItalic_italic_normal.woff') format('woff');
+}
+
+/*  Whitney SSm Advanced Semibold */
+@font-face {
+    font-family: "Whitney SSm A";
+    font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+  src: url('../font/WhitneySSmAdvancedSemibold_normal_normal.woff2') format('woff2'),
+       url('../font/WhitneySSmAdvancedSemibold_normal_normal.woff') format('woff');
+}
+
+/*  Whitney SSm Advanced Semibold Italic */
+@font-face {
+  font-family: "Whitney SSm A";
+  font-style: italic;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+  src: url('../font/WhitneySSmAdvancedSemiboldItalic_italic_normal.woff2') format('woff2'),
+       url('../font/WhitneySSmAdvancedSemiboldItalic_italic_normal.woff') format('woff');
+}
+

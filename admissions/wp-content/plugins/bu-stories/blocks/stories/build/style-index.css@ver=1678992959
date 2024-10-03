@@ -1,0 +1,25 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.bu-stories-story {
+  background: #202125;
+  margin: 0;
+  position: relative;
+  width: 100%;
+}
+.bu-stories-story:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 177.8846153846%;
+}
+@media (min-width: 640px) {
+  .bu-stories-story:before {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/

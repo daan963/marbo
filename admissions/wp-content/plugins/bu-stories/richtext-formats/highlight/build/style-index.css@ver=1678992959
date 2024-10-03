@@ -1,0 +1,1 @@
+span.bu-stories-text-highlight{display:inline;padding:clamp(2px,.09em,5px) clamp(4px,.09em,10px);border-radius:clamp(3px,.0375em,10px);box-decoration-break:clone;-webkit-box-decoration-break:clone}
