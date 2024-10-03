@@ -1,0 +1,154 @@
+/*
+	Project: BU WebLogin - Mobile
+	Author(s): BU Interactive Design
+	Created: Feb 2014
+*/
+
+/* RESET --------------------------------------------------------- */
+
+html,body,div,span,object,
+iframe,h1,h2,h3,h4,h5,h6,p,
+blockquote,pre,a,abbr,acronym,
+address,big,cite,code,em,img,
+q,s,samp,small,strike strong,tr,th,td
+sub,sup,b,i,dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,table,
+caption,tbody,tfoot,thead { margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent; }
+body                      { line-height:1;font:62.5%/120% sans-serif; }
+input[type=radio],
+input[type=checkbox]      { padding:0;margin:0; }
+input[type=hidden]        { display:none !important; }
+ol, ul                    { list-style:none; }
+blockquote                { quotes:none; }
+blockquote:before,
+blockquote:after          { content:'';content:none; }
+:focus                    { outline:0; }
+table                     { border-collapse:collapse;border-spacing:0; }
+
+/* GLOBAL --------------------------------------------------------- */
+
+html                      { height:100%; }
+body                      { background:#000;-webkit-text-size-adjust:none; }
+
+/* TYPOGRAPHY --------------------------------------------------------- */
+
+h1                        { text-indent:-5000px;background:transparent url(../images/subsig-sprite.png) no-repeat 2px 0;display:block;
+                            height:35px;width:236px;margin-bottom:30px; }
+h2                        { font-size:18px;padding:3px 0 0;margin-bottom:7px;color:#000; }
+h3                        { color:#767676;margin-bottom:10px;font-size:1.4em;line-height:1.6em; }
+p,
+li                        { color:#767676;margin-bottom:10px;font-size:1.4em;line-height:1.6em; }
+ul,
+ol                        { margin:0 0 10px 2em; }
+ul li,
+ol ul li                  { list-style-type:square; }
+li ul li                  { font-size:100%; }
+ol li,
+ul ol li                  { list-style-type:decimal;list-style-position:outside; }
+li ul,
+li ol                     { font-size:1em;margin-bottom:0; }
+.error                    { color:#cc0000;font-weight:700;margin:0; }
+.notice,
+.warning                  { font-weight:700;padding:3px 6px 3px 0; }
+.success                  { color:#368227;}
+strong                    { color:#4b4b4b; }
+a                         { color:#000;border-bottom:1px dotted #999;text-decoration:none; }
+
+/* LAYOUT --------------------------------------------------------- */
+
+#wrapper                  { background:#f1f1f1;padding:30px 20px 25px 20px; }
+.container                { width:100%; }
+form:after,
+.container:after          { content:".";display:block;height:0;clear:both;visibility:hidden; }
+.login-info,
+.error                    { padding:10px;margin:0 0 10px 0;background:#f6f6f6;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;border:1px solid #dfdfdf;width:100%;
+                            box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box; }
+.error                    { background:#fbeded;border-color:#f0b2b2;}
+.login-info li            { font-size:1.1em;list-style-type:none;margin:0;}
+.error-box                { padding:10px 12px 0;background:#fffbcc;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px; border:1px solid #dfd07f;margin-bottom: 10px; }
+.error-box a              { color:#cc0000; }
+.error-box .error         { padding:0;background:none;border:none;font-size:1.4em; }
+.success-box              { padding:10px 12px 0;background:#cdeaca;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px; border:1px solid #6abd5c;margin-bottom: 10px; }
+.description              { margin-top:15px; }
+#duo_iframe               { width: 100%; min-width: 304px; max-width: 620px; height: 330px; }
+.duo-wrapper              { margin-top:30px;overflow-x:auto;background:#ccc; }
+.duo-container            { min-width:450px; }                          
+.clear                    { clear:both; }
+
+/* FORMS --------------------------------------------------------- */
+
+form                      { clear:both; }
+label                     { position:absolute;top:-9999px;left:-9999px; }
+legend                    { font-size:14px;padding:5px 0 5px 2px;color:#cc0000;display:block;width:100%; }
+.input-text,
+.input-submit,
+.input-button             { font-size:1.4em;line-height:1.1em;font-weight:700; }
+.input-text,
+.input-submit,
+.input-button,
+textarea                  { display:block;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;margin-bottom:10px; }
+.input-text,
+textarea                  { box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;color:#575757;
+                            padding:10px;border:1px solid #cfd2d4;background:#fff url(../images/form-bg.jpg) repeat-x 0 0; }
+.input-submit             { -webkit-appearance:none;display:block;border:none;background:#2794bb;color:#fff;margin:0 10px 10px 0;
+                           overflow:visible;padding:10px 30px;border:1px solid #2380a1;float:left;cursor:pointer; }
+.input-submit:active      { background-color:#1f86b0;border-color:#186483; }
+.button                   { background:#c8c8c8;border:1px solid #b9b9b9; }
+a.button                  { font-size:1em;width:5em; }
+textarea                  { font-size:1.7em;line-height:1.5em;height:5em;resize:none; }
+.input-text:focus,
+textarea:focus            { border:1px solid #6d9fcf;color:#000; }
+
+::-webkit-input-placeholder { color:#575757; }
+:-moz-placeholder         { color:#575757; }
+
+/* misc. form elements */
+.utility                  { float:right;padding:12px 0 0;font-size:1.2em;margin-top:-60px; }
+.secur-id                 { font-size:1.2em;display:block;margin-bottom:10px;padding-left:2px; }
+.secur-id input           { display:inline;position:relative; }
+.secur-id label           { display:inline;color:#575757;padding:0 0 0 2px;font-size:1.2em;font-weight:400;position:relative;top:0;left:0; }
+.no-placeholder label     { display:block;color:#575757;padding-left:2px;font-size:1.2em;font-weight:700;position: static; top:auto; left:auto; }
+
+/* Forms that need to be tabbed (design-wise) */
+.form-tabbed              { background:#e8f1f4;border:1px solid #c5dee7;margin-bottom:10px;-moz-border-radius:5px;border-radius:5px;
+                            overflow:hidden; }
+.form-tabbed form         { padding:10px;margin-bottom:0; }
+.form-tabbed .input-text  { width:100%; }
+.form-tabbed label        { color:#859ba3; }
+.tabs                     { margin-left:0;padding:0;text-align:center; }
+.tabs li                  { padding:0;margin:0;list-style:none; }
+.tabs li:first-child a    { border-right:1px solid #c5dee7;margin-left:-1px; }
+.tabs a                   { display:block;border:0;float:left;width:50%;padding:10px 0;font-weight:700;background:#deeff5;
+                            border-bottom:1px solid #c5dee7;color:#118cb5; }
+.tabs a:hover             { color:#333; }
+.tabs .active a           { color:#667e86;background:#e8f1f4;border:0; }
+
+/* FOOTER --------------------------------------------------------- */
+
+#footer                   { color:#fff; }
+#footer li a              { display:block;color:#a0a0a0;font-size:.9em;border-bottom:none;padding:10px;font-weight:700; }
+#footer li a:hover        { color:#fff; }
+#footer ul                { margin:0;background:#222; }
+#footer li                { list-style:none;margin:0;padding:0;border-bottom:1px solid #333; }
+#footer span              { font-size:1.3em;padding:15px 0 20px 10px;display:block; }
+#footer span a            { color:#33c8fd;padding:0;border-bottom: 1px dotted #999;width:auto; }
+#footer:after             { display:block;clear:both;content:" ";height:0;overflow:hidden; }
+
+/* Media Queries --------------------------------------------------------- */
+
+@media(min-width:768px){
+    .container{width:450px;margin:0 auto;padding:50px 0 60px;}
+    h1 {margin-bottom: 40px;}
+    .input-text, .input-submit, .input-button, textarea { margin-bottom: 15px; }
+    .description{ margin-top:20px; }
+}
+
+@media(min-width:1025px){
+    .container{ padding:60px 0 70px; }
+}
+
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+    h1 { background-size: 118px 85px; background-position: 2px -50px; }
+}
