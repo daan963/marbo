@@ -1,0 +1,176 @@
+/*
+Version: 1.0.5
+Description: Theme stylesheet for BU Stats Plugin
+*/
+/*!
+ * Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+.bu-stat-list .bu-stat-single {
+  --bu-stat-list-stat-border: 1px solid #f0f0f0;
+  --bu-stat-list-stat-border-radius: 3px;
+}
+
+.bu-stat-single {
+  --bu-stat-value-fontfamily: Open Sans, Helvetica, sans-serif;
+  --bu-stat-title-fontfamily: Open Sans, Helvetica, sans-serif;
+  --bu-stat-description-fontfamily: Open Sans, Helvetica, sans-serif;
+  --bu-stat-prefix-fontfamily: Open Sans, Helvetica, sans-serif;
+  --bu-stat-suffix-fontfamily: Open Sans, Helvetica, sans-serif;
+  --bu-stat-connector-fontfamily: PT Serif, Georgia, serif;
+}
+
+.bu-stat-theme-default, .bu-stat-theme-override-default .bu-stat-single {
+  --bu-stat-bg-color: transparent;
+  --bu-stat-value-color: #000;
+  --bu-stat-title-color: #888;
+  --bu-stat-description-color: #555;
+  --bu-stat-prefix-color: #cc0000;
+  --bu-stat-suffix-color: #cc0000;
+  --bu-stat-connector-color: #888;
+  --bu-stat-donut-foreground-color: #cc0000;
+  --bu-stat-donut-background-color: #000;
+  --bu-stat-edit-link-color: #000;
+  --bu-stat-edit-link-hover-color: #000;
+}
+
+.bu-stat-theme-default.bu-stat-has-image, .bu-stat-theme-override-default .bu-stat-has-image.bu-stat-single {
+  --bu-stat-description-color: #000;
+}
+
+.bu-stat-theme-dark, .bu-stat-theme-override-dark .bu-stat-single {
+  --bu-stat-bg-color: #000;
+  --bu-stat-value-color: #fff;
+  --bu-stat-title-color: #ccc;
+  --bu-stat-description-color: #f5f5f5;
+  --bu-stat-prefix-color: #cc0000;
+  --bu-stat-suffix-color: #cc0000;
+  --bu-stat-connector-color: #f5f5f5;
+  --bu-stat-donut-foreground-color: #cc0000;
+  --bu-stat-donut-background-color: #fff;
+  --bu-stat-edit-link-color: #fff;
+  --bu-stat-edit-link-hover-color: #fff;
+}
+
+/*
+Override all themes on bu-stat-single with a single
+theme option for all stats being output in that shortcode/component.
+*/
+.bu-stat-title {
+  color: var(--bu-stat-title-color);
+  font-family: var(--bu-stat-title-fontfamily);
+}
+
+@supports not (--custom: property) {
+  .bu-stat-title {
+    color: #888;
+  }
+}
+
+.bu-stat-description {
+  color: var(--bu-stat-description-color);
+  font-family: var(--bu-stat-description-fontfamily);
+}
+
+@supports not (--custom: property) {
+  .bu-stat-description {
+    color: #888;
+  }
+}
+
+.bu-stat-prefix {
+  color: var(--bu-stat-prefix-color);
+  font-family: var(--bu-stat-prefix-fontfamily);
+}
+
+@supports not (--custom: property) {
+  .bu-stat-prefix {
+    color: #cc0000;
+  }
+}
+
+.bu-stat-value {
+  color: var(--bu-stat-value-color);
+  font-family: var(--bu-stat-value-fontfamily);
+}
+
+@supports not (--custom: property) {
+  .bu-stat-value {
+    color: #000;
+  }
+}
+
+.bu-stat-suffix {
+  color: var(--bu-stat-suffix-color);
+  font-family: var(--bu-stat-suffix-fontfamily);
+}
+
+@supports not (--custom: property) {
+  .bu-stat-suffix {
+    color: #cc0000;
+  }
+}
+
+.bu-stat-value-connector {
+  color: var(--bu-stat-connector-color);
+  font-family: var(--bu-stat-connector-fontfamily);
+}
+
+@supports not (--custom: property) {
+  .bu-stat-value-connector {
+    color: #888;
+    font-family: "PT Serif", Georgia, serif;
+  }
+}
+
+.bu-stat-image {
+  opacity: 0.25;
+}
+
+.bu-stat-single {
+  background-color: var(--bu-stat-bg-color);
+}
+
+.bu-stat-single .bu-stat-post-edit-link {
+  color: var(--bu-stat-edit-link-color);
+}
+
+.bu-stat-single .bu-stat-post-edit-link:hover {
+  color: var(--bu-stat-edit-link-hover-color);
+}
+
+.bu-stat-donut-foreground {
+  stroke: var(--bu-stat-donut-foreground-color);
+  stroke-linecap: round;
+}
+
+@supports not (--custom: property) {
+  .bu-stat-donut-foreground {
+    stroke: #cc0000;
+  }
+}
+
+.bu-stat-donut-background {
+  opacity: 0.15;
+  stroke: var(--bu-stat-donut-background-color);
+}
+
+@supports not (--custom: property) {
+  .bu-stat-donut-background {
+    stroke: #ddd;
+  }
+}
+
+.bu-stat-list .bu-stat-single {
+  border: var(--bu-stat-list-stat-border);
+  border-radius: var(--bu-stat-list-stat-border-radius);
+}
+
+@supports not (--custom: property) {
+  .bu-stat-list .bu-stat-single {
+    border: 1px solid #f0f0f0;
+    border-radius: 3px;
+  }
+}
+
+/*# sourceMappingURL=style-theme.css.map */

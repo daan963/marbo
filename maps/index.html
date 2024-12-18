@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+          <meta property="og:url" content="http://maps.bu.edu/?id=647" />
+      <meta property="og:type" content="article" />
+      <meta property="og:title" content="Boston University" />
+      <meta property="og:description" content="Visit Boston University's Interactive Campus Map" />
+      <meta property="og:image" content="https://assets.concept3d.com/647/bu-maps-logo-3.png" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <title>Boston University</title>
+    <meta name="description" content="Visit our interactive map">
+    <link rel="manifest" href="inc/manifest/?id=647">
+    <link id="apple-favicon" rel="apple-touch-icon" href="assets/icons/favicons/c3d.png">
+    <link rel="shortcut icon" id="favicon" href="assets/icons/favicons/c3d.png" />
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" as="font" />
+    <link rel="preload stylesheet" href="css/thirdparty.css?v=5.11.5" as="style" type="text/css"/>
+    <link rel="preload stylesheet" href="libcss/atlas-font.css?v=5.11.5" as="style" type="text/css"/>
+
+    
+    
+    
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function (){ dataLayer.push(arguments); };
+      window.gtag('consent', 'default', {
+        ad_storage: 'denied',
+        analytics_storage: 'denied',
+        functionality_storage: 'denied',
+        personalization_storage: 'denied',
+        security_storage: 'denied',
+        wait_for_update: 500,
+      });
+    </script>
+
+    <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer', 'GTM-PR2B87W');</script>
+    <!-- End Google Tag Manager -->
+
+        
+    <noscript>Your browser does not support or is blocking javascript, this application requires javascript to function</noscript>
+    <script type="text/javascript" src="https://cdn.levelaccess.net/accessjs/YW1wMTI1MDM/access.js" async></script>
+  </head>
+  <body id="body">
+    <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PR2B87W"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <div id="skeleton-wrapper">
+      <div class="skeleton-header"></div>
+      <div class="skeleton-sidebar">
+        <div class="skeleton-sidebar-header"></div>
+        <div class="skeleton-tools"></div>
+        <div class="category-skeleton"></div>
+      </div>
+    </div>
+
+    <div id="atlas"></div>
+
+    <script src="js/libs.js?v=5.11.5"></script>
+    <script src="js/index.js?v=5.11.5"></script>
+    <script src="js/runtime.js?v=5.11.5"></script>
+    <script>
+      // Check that service workers are registered
+      if ('serviceWorker' in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('serviceWorker.js');
+        });
+      }
+    </script>
+    <!-- capture higher ed -->
+    <script>
+      (function (a, b, c, d, e, f, g) {
+        a[e] =
+          a[e] ||
+          function () {
+            (a[e].q = a[e].q || []).push(arguments);
+          };
+        f = b.createElement(c);
+        g = b.getElementsByTagName(c)[0];
+        f.async = 1;
+        f.src = d + '/cbe/cbe.js';
+        g.parentNode.insertBefore(f, g);
+      })(window, document, 'script', 'https://cbe.capturehighered.net', '_cbe');
+    </script>
+      </body>
+</html>

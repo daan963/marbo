@@ -1,0 +1,327 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-create-block-bu-stories {
+  background-color: #21759b;
+  color: #fff;
+  padding: 2px;
+}
+/* Import WordPress base styles */
+/**
+ * Colors
+ */
+/**
+ * SCSS Variables.
+ *
+ * Please use variables from this sheet to ensure consistency across the UI.
+ * Don't add to this sheet unless you're pretty sure the value will be reused in many places.
+ * For example, don't add rules to this sheet that affect block visuals. It's purely for UI.
+ */
+/**
+ * Colors
+ */
+/**
+ * Fonts & basic variables.
+ */
+/**
+ * Grid System.
+ * https://make.wordpress.org/design/2019/10/31/proposal-a-consistent-spacing-system-for-wordpress/
+ */
+/**
+ * Dimensions.
+ */
+/**
+ * Shadows.
+ */
+/**
+ * Editor widths.
+ */
+/**
+ * Block & Editor UI.
+ */
+/**
+ * Block paddings.
+ */
+/**
+ * React Native specific.
+ * These variables do not appear to be used anywhere else.
+ */
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Focus styles.
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+/**
+ * These are default block editor widths in case the theme doesn't provide them.
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+:root {
+  --wp-admin-theme-color: #007cba;
+  --wp-admin-theme-color-darker-10: #006ba1;
+  --wp-admin-theme-color-darker-20: #005a87;
+  --wp-admin-border-width-focus: 2px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  :root {
+    --wp-admin-border-width-focus: 1.5px;
+  }
+}
+
+.codeamp-components-multi-select-control__input-container {
+  font-size: 13px;
+  line-height: normal;
+}
+
+.codeamp-components-multi-select-control__input-container {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  padding: 6px 8px;
+  box-shadow: 0 0 0 transparent;
+  transition: box-shadow 0.1s linear;
+  border-radius: 2px;
+  border: 1px solid #757575;
+  /* Fonts smaller than 16px causes mobile safari to zoom. */
+  font-size: 16px;
+  /* Override core line-height. To be reviewed. */
+  line-height: normal;
+  width: 100%;
+  margin: 0 0 8px 0;
+  padding: 0;
+  cursor: text;
+}
+@media (prefers-reduced-motion: reduce) {
+  .codeamp-components-multi-select-control__input-container {
+    transition-duration: 0s;
+  }
+}
+@media (min-width: 600px) {
+  .codeamp-components-multi-select-control__input-container {
+    font-size: 13px;
+    /* Override core line-height. To be reviewed. */
+    line-height: normal;
+  }
+}
+.codeamp-components-multi-select-control__input-container:focus {
+  border-color: #007cba;
+  border-color: var(--wp-admin-theme-color);
+  box-shadow: 0 0 0 1px #007cba;
+  box-shadow: 0 0 0 1px var(--wp-admin-theme-color);
+  outline: 2px solid transparent;
+}
+.codeamp-components-multi-select-control__input-container::-webkit-input-placeholder {
+  color: rgba(30, 30, 30, 0.62);
+}
+.codeamp-components-multi-select-control__input-container::-moz-placeholder {
+  opacity: 1;
+  color: rgba(30, 30, 30, 0.62);
+}
+.codeamp-components-multi-select-control__input-container:-ms-input-placeholder {
+  color: rgba(30, 30, 30, 0.62);
+}
+.is-dark-theme .codeamp-components-multi-select-control__input-container::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.65);
+}
+.is-dark-theme .codeamp-components-multi-select-control__input-container::-moz-placeholder {
+  opacity: 1;
+  color: rgba(255, 255, 255, 0.65);
+}
+.is-dark-theme .codeamp-components-multi-select-control__input-container:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.65);
+}
+.codeamp-components-multi-select-control__input-container.is-disabled {
+  background: #ddd;
+  border-color: #ddd;
+}
+.codeamp-components-multi-select-control__input-container.is-active {
+  border-color: #007cba;
+  border-color: var(--wp-admin-theme-color);
+  box-shadow: 0 0 0 1px #007cba;
+  box-shadow: 0 0 0 1px var(--wp-admin-theme-color);
+  outline: 2px solid transparent;
+}
+.codeamp-components-multi-select-control__input-container input[type=text].codeamp-components-multi-select-control__input {
+  display: inline-block;
+  flex: 1;
+  font-family: inherit;
+  font-size: 16px;
+  width: 100%;
+  max-width: 100%;
+  margin-left: 4px;
+  padding: 0;
+  min-height: 24px;
+  min-width: 50px;
+  background: inherit;
+  border: 0;
+  color: #1e1e1e;
+  box-shadow: none;
+}
+@media (min-width: 600px) {
+  .codeamp-components-multi-select-control__input-container input[type=text].codeamp-components-multi-select-control__input {
+    font-size: 13px;
+  }
+}
+.codeamp-components-multi-select-control__input-container input[type=text].codeamp-components-multi-select-control__input:focus, .codeamp-components-multi-select-control.is-active .codeamp-components-multi-select-control__input-container input[type=text].codeamp-components-multi-select-control__input {
+  outline: none;
+  box-shadow: none;
+}
+.codeamp-components-multi-select-control__input-container .codeamp-components-multi-select-control__token + input[type=text].codeamp-components-multi-select-control__input {
+  width: auto;
+}
+
+.codeamp-components-multi-select-control__help {
+  font-size: 12px;
+  font-style: normal;
+  color: #757575;
+}
+
+.codeamp-components-multi-select-control__tokens-container {
+  padding: 4px;
+}
+
+.codeamp-components-multi-select-control__token {
+  font-size: 13px;
+  display: flex;
+  color: #1e1e1e;
+  max-width: 100%;
+}
+.codeamp-components-multi-select-control__token.is-borderless {
+  position: relative;
+  padding: 0 24px 0 0;
+}
+.codeamp-components-multi-select-control__token.is-borderless .codeamp-components-multi-select-control__token-text {
+  background: transparent;
+  color: #007cba;
+  color: var(--wp-admin-theme-color);
+}
+.codeamp-components-multi-select-control__token.is-borderless .codeamp-components-multi-select-control__remove-token {
+  background: transparent;
+  color: #757575;
+  position: absolute;
+  top: 1px;
+  right: 0;
+  padding: 0;
+}
+.codeamp-components-multi-select-control__token.is-borderless.is-success .codeamp-components-multi-select-control__token-text {
+  color: #4ab866;
+}
+.codeamp-components-multi-select-control__token.is-borderless.is-error .codeamp-components-multi-select-control__token-text {
+  color: #cc1818;
+  border-radius: 4px 0 0 4px;
+  padding: 0 4px 0 6px;
+}
+.codeamp-components-multi-select-control__token.is-borderless.is-validating .codeamp-components-multi-select-control__token-text {
+  color: #1e1e1e;
+}
+.codeamp-components-multi-select-control__token.is-disabled .codeamp-components-multi-select-control__remove-token {
+  cursor: default;
+}
+
+.codeamp-components-multi-select-control__token-text,
+.codeamp-components-multi-select-control__remove-token.components-button {
+  display: inline-block;
+  line-height: 24px;
+  height: auto;
+  background: #ddd;
+  min-width: unset;
+  transition: all 0.2s cubic-bezier(0.4, 1, 0.4, 1);
+}
+@media (prefers-reduced-motion: reduce) {
+  .codeamp-components-multi-select-control__token-text,
+.codeamp-components-multi-select-control__remove-token.components-button {
+    transition-duration: 0s;
+    -webkit-animation-duration: 1ms;
+            animation-duration: 1ms;
+  }
+}
+
+.codeamp-components-multi-select-control__token-text {
+  border-radius: 2px 0 0 2px;
+  padding: 0 0 0 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.codeamp-components-multi-select-control__remove-token.components-button {
+  cursor: pointer;
+  border-radius: 0 2px 2px 0;
+  padding: 0 2px;
+  color: #1e1e1e;
+  line-height: 10px;
+  overflow: initial;
+}
+.codeamp-components-multi-select-control__remove-token.components-button:hover {
+  color: #1e1e1e;
+}
+
+.codeamp-components-multi-select-control__suggestions-list {
+  flex: 1 0 100%;
+  min-width: 100%;
+  max-height: 9em;
+  overflow-y: auto;
+  transition: all 0.15s ease-in-out;
+  list-style: none;
+  border-top: 1px solid #757575;
+  margin: 0;
+  padding: 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  .codeamp-components-multi-select-control__suggestions-list {
+    transition-duration: 0s;
+  }
+}
+
+.codeamp-components-multi-select-control__no-suggestions {
+  color: #757575;
+  font-size: 13px;
+  margin: 0;
+  display: block;
+  padding: 4px 8px;
+}
+
+.codeamp-components-multi-select-control__suggestion {
+  color: #757575;
+  display: block;
+  font-size: 13px;
+  padding: 4px 8px;
+  margin: 0;
+  cursor: pointer;
+}
+.codeamp-components-multi-select-control__suggestion.is-selected {
+  background: #007cba;
+  background: var(--wp-admin-theme-color);
+  color: #fff;
+}
+
+.codeamp-components-multi-select-control__suggestion-match {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

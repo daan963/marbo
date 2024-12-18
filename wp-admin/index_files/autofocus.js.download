@@ -1,0 +1,4 @@
+function formfocus() {
+	document.getElementById('j_username').focus();
+}
+window.onload = formfocus;
